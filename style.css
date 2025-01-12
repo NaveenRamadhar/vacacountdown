@@ -12,7 +12,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(135deg, #ff6f61, #ffbc00); Bold gradient */
   background: linear-gradient(to right, #add8e6, #ff69b4);
   color: white;
   text-align: center;
@@ -29,15 +28,15 @@ body {
 
 h1 {
   margin-top: 75px;
-  font-family: "Roboto", sans-serif; /* Sleek and modern font */
-  font-size: 25px; /* Slightly smaller size */
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
   color: #fff;
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 15px;
   letter-spacing: 2px;
-  animation: bounce 1s ease-in-out infinite; /* Bouncing animation */
-  white-space: nowrap; /* Prevent line breaks */
-  text-align: center; /* Center-align the text */
+  animation: bounce 1s ease-in-out infinite;
+  white-space: nowrap;
+  text-align: center;
 }
 
 @keyframes bounce {
@@ -57,9 +56,9 @@ h1 {
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2), 0 6px 20px rgba(0, 0, 255, 0.1);
-
   z-index: 10;
   background-color: #ff69b4;
+  margin-bottom: 30px; /* Added margin to separate from other elements */
 }
 
 #message {
@@ -89,12 +88,11 @@ h1 {
 .time-box span {
   font-size: 3.5rem;
   font-weight: bold;
-  color: white; /* Softer, warmer color for countdown */
-  /* text-shadow: 0 0 10px #f4a261, 0 0 20px #f4a261; */
+  color: white;
 }
 
 button {
-  background: #add8e6; /* Bold red */
+  background: #add8e6;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -108,13 +106,13 @@ button {
 }
 
 button:hover {
-  background: #ff69b4; /* Golden hover effect */
+  background: #ff69b4;
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2), 0 6px 20px rgba(0, 0, 255, 0.1);
 }
 
 .foot {
-  margin-top: 105px;
+  margin-top: 85px;
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -124,14 +122,13 @@ button:hover {
 }
 
 .foot h4 {
-   margin-top: 15px;
   font-size: 1.4rem;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 #logo {
-  width: 200px; /* Reduced logo size */
+  width: 200px;
   transition: transform 0.3s ease;
 }
 
@@ -151,12 +148,19 @@ canvas {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 22px; /* Smaller font size for small screens */
-    margin-top: 75px; /* Further reduce top margin */
+    font-size: 22px;
+    margin-top: 75px;
   }
 
   #logo {
-    width: 100px; /* Reduced logo size */
-    transition: transform 0.3s ease;
+    width: 100px;
+  }
+
+  .container {
+    margin-top: 100px; /* Added margin to avoid overlap */
+  }
+
+  .foot {
+    margin-top: 20px; /* Reduced margin for foot section */
   }
 }
