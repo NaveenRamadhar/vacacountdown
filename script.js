@@ -29,7 +29,9 @@ function updateCountdown() {
   document.getElementById("minutes").textContent = minutes;
   document.getElementById("seconds").textContent = seconds;
 
-  if (timeLeft < 0) {
+  if (timeLeft < 0 && !confettiActive) {
+    confettiActive = true;
+    launchConfetti();
     document.getElementById("countdown").textContent =
       "🎉 The vacation has started! 🎉";
   }
