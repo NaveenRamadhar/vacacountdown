@@ -154,4 +154,7 @@ canvas {
   #logo {
     width: 100px;
   }
+  .foot {
+    margin-top: 200px;
+  }
 }
