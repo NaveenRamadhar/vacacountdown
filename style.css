@@ -114,6 +114,7 @@ button:hover {
 }
 
 .foot {
+  margin-top: 25px;
   position: absolute;
   bottom: 20px;
   left: 50%;
