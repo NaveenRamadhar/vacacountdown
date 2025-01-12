@@ -111,7 +111,7 @@ button:hover {
 }
 
 .foot {
-  margin-top: 85px;
+  margin-top: 105px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -155,6 +155,6 @@ canvas {
   }
 
   .foot {
-    margin-top: 250px; /* Reduced margin for foot section */
+    margin-top: 350px; /* Reduced margin for foot section */
   }
 }
